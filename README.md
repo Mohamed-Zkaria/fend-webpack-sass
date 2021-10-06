@@ -8,6 +8,8 @@ To get started developing right away:
 
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
+* start the developement client `npm run build-dev`
+* produce the production client `npm run build-prod`
 
 ## Create React App
 
