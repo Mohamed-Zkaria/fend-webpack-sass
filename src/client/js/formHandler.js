@@ -3,22 +3,13 @@ async function handleSubmit(event) {
     const url = 'http://localhost:8081/test';
     const axios = require("axios")
 
-    // check what text was put into the form field
     let formText = document.getElementById('name').value
-    if(formText === ""){
+
+    let valid = Client.textValidator(formText);
+    if(!valid ){
         window.alert("form is empty.");
         return 
     }
-    Client.checkForName(formText)
-
-    console.log("::: Form Submitted :::")
-    // fetch('http://localhost:8081/test')
-    // .then(res => {
-    //     return res.json()
-    // })
-    // .then(function(data) {
-    //     document.getElementById('results').innerHTML = data.message
-    // })
 
     try{
         const response = await axios.post(url, {
