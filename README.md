@@ -10,7 +10,7 @@ To get started developing right away:
 * start the development server with `npm start`
 * start the developement client `npm run build-dev`
 * produce the production client `npm run build-prod`
-* and env file that has an api key is need, check .example.env for refrence
+* add env file that has an api key is needed, check .example.env for refrence
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
