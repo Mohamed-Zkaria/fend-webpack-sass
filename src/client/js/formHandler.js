@@ -6,8 +6,9 @@ async function handleSubmit(event) {
     let formText = document.getElementById('name').value
 
     let valid = Client.textValidator(formText);
+    console.log({valid})
     if(!valid ){
-        window.alert("form is empty.");
+        window.alert("form is empty or less than three characters.");
         return 
     }
 
